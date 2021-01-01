@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://appinventor.mit.edu/">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: cornsilk;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: darkgray;
+    padding: 14px 16px;
+    background-color: darkseagreen;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav .subnavbtn {
+    background-color: lightcoral;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: seashell;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: green;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#company">Company</a>
+                <a href="#team">Team</a>
+                <a href="#careers">Careers</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#bring">Bring</a>
+                <a href="#deliver">Deliver</a>
+                <a href="#package">Package</a>
+                <a href="#express">Express</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Partner <i class="fa fa-caret down"></i></button>
+            <div class="subnav-content">
+                <a href="https://online.deu.edu.tr/portal">Link 1</a>
+                <a href="https://www.w3schools.com/">Link 2</a>
+                <a href="https://medium.com/@digitalact/2020-front-end-web-developer-road-map-ed3fcdec1c14">Link 3</a>
+            </div>
+        </div>
+    </div>
+    <a href="#contact">Contact</a>
+</div>
+
+<div style="padding: 0 16px;">
+    <h3 Subnav/dropdown menu inside a Navigation Bar></h3>
+    <p>Hover over the ''about'', ''services'' or ''partners'' link to see the navigation menu. </p>
+</div>
+
+</body>
+</html>
